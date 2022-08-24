@@ -4,9 +4,9 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class Operator implements Runnable {
-    String name;
-    ATC atc1;
-    int sleepOperator = 300;
+    private String name;
+    private ATC atc1;
+    private int sleepOperator = 300;
 
     public Operator(String name, ATC atc) {
         this.name = name;

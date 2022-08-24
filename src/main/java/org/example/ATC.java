@@ -6,9 +6,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class ATC implements Runnable {
-    int sleepATC = 100;
-    BlockingQueue blockingQueue = new ArrayBlockingQueue(20);
-    int calling = 60;
+    protected int sleepATC = 100;
+    protected BlockingQueue blockingQueue = new ArrayBlockingQueue(20);
+    protected int calling = 60;
 
     @Override
     public void run() {
